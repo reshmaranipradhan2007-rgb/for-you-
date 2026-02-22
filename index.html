@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, My Love</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Happy Birthday, My Love 🎉❤️</h1>
+    <p>
+        Today is not just a celebration of the day you were born, but a celebration of every moment we’ve shared and every memory we are yet to create. 
+        You are my heart, my soul, my safe haven, and my forever. With you, life feels brighter, every smile is deeper, and even the smallest moments turn into treasures.
+    </p>
+    <p>
+        I am endlessly grateful for your love, your kindness, and the way you make me feel truly seen and cherished. 
+        On this special day, I wish you all the happiness, peace, and love you so deeply deserve. 
+        I promise to stand by you, hold your hand through every storm, and love you endlessly, today, tomorrow, and for all the days of our forever together.
+    </p>
+    <a href="page2.html" class="btn">Next →</a>
+</div>
+
+<!-- Flying hearts animation -->
+<div class="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: #fff;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    background: #ff4b2b;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #ff416c;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Flying hearts */
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: fly 7s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes fly {
+    0% {transform: translateY(100vh) scale(0.5);}
+    50% {opacity: 1;}
+    100% {transform: translateY(-10vh) scale(1);}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forever Love</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Forever Love 💕</h1>
+    <p>
+        I can’t keep this in my heart any longer—I need you to know how much you mean to me. Every moment without you feels incomplete, and I miss you more than words can express. 
+        You are my joy, my comfort, my home, and the one I want by my side through everything. 
+    </p>
+    <p>
+        I love you with all that I am, more than I have ever loved anyone. Being with you makes life brighter, every smile sweeter, every day more meaningful. 
+        I don’t want to imagine a future without you. 
+        So here, from the depths of my heart, I ask you—will you be mine forever? I love you and miss you endlessly.
+    </p>
+    <a href="page3.html" class="btn">Next →</a>
+</div>
+
+<!-- Flying hearts animation -->
+<div class="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+}
+const heartsContainer = document.querySelector('.hearts');
+
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+    heart.style.fontSize = (15 + Math.random() * 30) + 'px';
+    heart.innerText = ['❤️','😍','🥰','💖','💘'][Math.floor(Math.random()*5)];
+    heartsContainer.appendChild(heart);
+    setTimeout(() => heart.remove(), 7000);
+}
+
+setInterval(createHeart, 300);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Wishes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Happy Birthday Once Again! 🎂💖</h1>
+    <p>
+        Janmadinara hardika subhakamana! 🥰
+    </p>
+    <p>
+        I hope this makes you smile and feel loved. Thank you for being my everything. 
+        May your day be filled with happiness, love, and unforgettable memories.
+    </p>
+    <a href="index.html" class="btn">Back to Home</a>
+</div>
+
+<!-- Flying hearts animation -->
+<div class="hearts"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
